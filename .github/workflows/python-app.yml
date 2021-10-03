@@ -6,9 +6,6 @@ name: automation python tester
 on:
   push:
     branches: [ main ]
-  branches-ignore:
-    - 'FastAPI'
-    - 'Notebook'
   pull_request:
     branches: [ main ]
 
