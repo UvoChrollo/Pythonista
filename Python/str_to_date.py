@@ -11,8 +11,11 @@ def str_to_date(masukkan: str, format: str) -> datetime:
     Returns:
         datetime: output berupa tanggal
 
-    >>> str_to_date('03/10/2021','%d/%m/%y')
-    03/10/2021
+    >>> str_to_date('03/10/2021','%d/%m/%Y')
+    2021-10-03
     """
-    hasil = datetime.strptime(masukkan, format)
+    hasil = datetime.strptime(masukkan, format).date()
     return hasil
+
+
+print(str_to_date("03/10/2021", "%d/%m/%Y"))
