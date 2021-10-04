@@ -1,35 +1,42 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
+
+# nama workflow
 name: automation python tester
 
+
+# bekerja di
 on:
+  # push activity branch main
   push:
     branches: [ main ]
+  # pull activity branch main
   pull_request:
     branches: [ main ]
 
+# kegiatan / workflow
 jobs:
+  # basis
   build:
-
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # sistem operasi, wajib linux
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
-    - name: Install dependencies
+        python-version: 3.9 # latest python version
+    - name: Install dependencies # install package yang ada pada file requirements.txt dan dev-requirements.txt
       run: |
-        python -m pip install --upgrade pip
+        python -m pip install --upgrade pip 
         pip install -r requirements.txt -r dev-requirements.txt
-    - name: Lint with flake8
+    - name: Lint with flake8 # python linting
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test Doctest
+    - name: Test Doctest # testing koding memakai tester di docstring, doctest = docstring tester (?)
       run: |
         pytest . --doctest-modules --ignore=Notebook
