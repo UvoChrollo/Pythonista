@@ -15,4 +15,5 @@ def list_to_matrices(list_of_value: list, shaping: tuple) -> np.ndarray:
     [[1 2]
      [3 4]]
     """
-    return np.array(list_of_value.reshape(shaping))
+    result = np.array(list_of_value).reshape(shaping)
+    return result
