@@ -28,7 +28,7 @@ def desc_stat_matr(matrix: np.ndarray) -> dict:
     Returns:
         [type]: [description]
 
-    >>> print(desc_stat_matr((list_to_matrices([1,2,3,4]))))
+    >>> print(desc_stat_matr((list_to_matrices([1,2,3,4],(2,2)))))
     {'row_mean': [1.5, 3.5], 'col_mean': [2.0, 3.0], 'row_median': [1.5, 3.5], 'col_median': [2.0, 3.0], 'row_std': [0.5, 0.5], 'col_std': [1.0, 1.0]}
     """
     shape = matrix.shape
