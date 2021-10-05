@@ -8,7 +8,7 @@ def stat_hist_desc(column: pd.Series, data: pd.DataFrame):
 
     """Fungsi untuk menampilkan Histogram beserta informasi tentang Mean, Median, Standard Deviasi
 
-    >>> stat_hist_desc(x='acceleration',data=df_mpg) # doctest: +SKIP
+    >>> stat_hist_desc(x=df_mpg['acceleration'],data=df_mpg) # doctest: +SKIP
     """
 
     ax = sns.histplot(x=column, data=data)
