@@ -2,8 +2,8 @@
 # p.get_x() = mendapatkan koordinat x dari label
 # color = warna tulisan
 # size = ukuran tulisan
-# ha = ?
-# va = ?
+# ha = horizontal alignment, highly recommend : center
+# va = vertical alignment, highly recommend : center
 
 
 import matplotlib.pyplot as plt
