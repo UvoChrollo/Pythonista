@@ -24,7 +24,7 @@ def count_anno_plot(column: pd.Series, data: pd.DataFrame):
     for p in ax.patches:
         ax.annotate(
             p.get_height(),
-            (p.get_x() + 0.4, p.get_height() - 0.1),
+            (p.get_x() + 0.4, p.get_height() - 0.1), #set up coordinate
             ha="center",
             va="top",
             color="black",
