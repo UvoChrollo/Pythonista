@@ -27,7 +27,7 @@ def count_anno_plot(column: pd.Series, data: pd.DataFrame):
             (p.get_x() + 0.4, p.get_height() - 0.1),
             ha="center",
             va="top",
-            color="white",
+            color="black",
             size=15,
         )
     plt.show()
