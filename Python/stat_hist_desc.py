@@ -2,9 +2,10 @@ import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from typing import Optional
 
 
-def stat_hist_desc(column: pd.Series, data: pd.DataFrame):
+def stat_hist_desc(column: pd.Series, data: pd.DataFrame, hue: Optional[pd.Series] = None):
 
     """Fungsi untuk menampilkan Histogram beserta informasi tentang Mean, Median, Standard Deviasi
 
