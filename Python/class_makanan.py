@@ -23,7 +23,7 @@ class Makanan:
 
     def tambah_menu(self, *makanan):
         if len(makanan) > self.qty:
-            keterangan = "Maaf, Data Berlebih"
+            raise ValueError("Maaf, Data Berlebih")
         elif len(makanan) <= self.qty:
             for x in makanan:
                 if x in Makanan.food.keys():
