@@ -8,7 +8,7 @@ class Makanan:
     >>> print(m1)
     Menu Ayam Goreng : Harga 20000
     Menu Mie Ayam : Harga 10000
-
+    <BLANKLINE>
     """
 
     def __init__(self, quantity, nomor_meja):
