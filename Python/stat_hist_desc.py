@@ -13,6 +13,8 @@ def stat_hist_desc(
 
     >>> stat_hist_desc(x=df_mpg['acceleration'],data=df_mpg) # doctest: +SKIP
     """
+    if column.isnull().sum() > 0:
+        raise ValueError("Maaf, Masih terdapat data yang kosong")
 
     ax = sns.histplot(x=column, data=data, hue=hue)
 
