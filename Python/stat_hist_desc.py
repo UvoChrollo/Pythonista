@@ -5,14 +5,16 @@ import pandas as pd
 from typing import Optional
 
 
-def stat_hist_desc(column: pd.Series, data: pd.DataFrame, hue: Optional[pd.Series] = None):
+def stat_hist_desc(
+    column: pd.Series, data: pd.DataFrame, hue: Optional[pd.Series] = None
+):
 
     """Fungsi untuk menampilkan Histogram beserta informasi tentang Mean, Median, Standard Deviasi
 
     >>> stat_hist_desc(x=df_mpg['acceleration'],data=df_mpg) # doctest: +SKIP
     """
 
-    ax = sns.histplot(x=column, data=data)
+    ax = sns.histplot(x=column, data=data, hue=hue)
 
     plt.axvline(
         np.mean(column),
