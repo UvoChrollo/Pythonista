@@ -7,3 +7,4 @@ isort
 fastapi
 datetime
 seaborn
+opencv-python
