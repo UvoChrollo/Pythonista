@@ -3,9 +3,9 @@ import numpy as np
 
 def face_detection(img : np.ndarray, title : str) -> np.ndarray:
     """
-    >>> face_detection('gambar.jpg',"Gambarku")
+    >>> face_detection('gambar.jpg',"Gambarku") # doctest: +SKIP
     """
-    face_cascade = cv2.CascadeClassifier('requirement/haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     image = cv2.imread(img)
     grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     model = face_cascade.detectMultiScale(grayscale, 1.1, 4)
