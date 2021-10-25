@@ -1,8 +1,10 @@
 # API = Application Programming Interface
 
+API = Protokol komunikasi antara client dan server, API biasanya digunakan untuk pembuatan aplikasi agar lebih mudah dan lebih cepat
+
 # RestAPI = Representational State Transfer API
 
-## API = Protokol komunikasi antara client dan server, API biasanya digunakan untuk pembuatan aplikasi agar lebih mudah dan lebih cepat
+RestAPI = Sebuah gaya arsitektur yang mendefinisikan serangkaian batasan yang akan digunakan untuk membuat layanan web
 
 ### Types of API
 1. Web API
