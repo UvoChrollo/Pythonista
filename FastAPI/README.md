@@ -15,3 +15,8 @@ RestAPI = Sebuah gaya arsitektur yang mendefinisikan serangkaian batasan yang ak
 
 ### Keuntungan API
 1. Efficiency
+
+
+#### Referensi
+1. [Introduction to API](https://www.geeksforgeeks.org/introduction-to-apis/)
+2. [Rest API](https://www.geeksforgeeks.org/rest-api-introduction/)
