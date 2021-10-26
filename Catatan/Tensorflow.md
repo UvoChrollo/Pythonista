@@ -1,0 +1,2 @@
+1. ```tf.const``` -> Creates a constant tensor from a tensor-like object.
+2. ```tf.const``` vs ```tf.variable``` -> In TensorFlow the differences between constants and variables are that when you declare some constant, its value can't be changed in the future (also the initialization should be with a value, not with operation).<br>Nevertheless, when you declare a Variable, you can change its value in the future with tf.assign() method (and the initialization can be achieved with a value or operation).
