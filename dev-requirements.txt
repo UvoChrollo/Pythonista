@@ -8,3 +8,6 @@ fastapi
 datetime
 seaborn
 opencv-python
+json
+jinja2
+python-multipart
